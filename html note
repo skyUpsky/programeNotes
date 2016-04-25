@@ -1,0 +1,109 @@
+cookie 默认过期时间是关闭浏览器时。
+Standard Generalized Markup Language=标准通用化标记语言SGML
+document type defination =dtd
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionall,strict,frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="gb2312">
+<meta http-equiv="Content-Type"	 content="5"; url=www.... />
+<meta http-equiv="refresh"	 content="gb2312" />
+<meta name="robots"	 content="all"/>
+<meta name="author"	 content="ajie(at)netease.com,阿捷" />
+<meta name="Copyright"	 content="www.w3cn.org,自由版权,任意转载" />
+<meta name="description" content="新网页设计师,web标准的教程站点" />
+<meta name="keywords"	 content="web 标准,教程,web"  />
+<head>
+<link rel="shortcut icon"	href="http://www.w3cn.org/favicon.ico"	type="image/x-icon" />
+<link rel="stylesheet"		href="style/c1.css"			type="text/css">
+脚本：
+最好将浏览器脚本通知打开，设置为每次访问页面时检查。
+相对路径：<body background="doru\a.jpg">或".\doru\a.jpg";上级文件夹 "..\baseduru\a.jpg"
+url与urn区别：前者提供位置，而且指定了访问方式。
+get方式数据256字节，post王勇无限制
+font-family:黑体
+font-size:em单位 是可在浏览器调节的大小单位
+伪类可设置超链接属性a:link{...}.
+链接中去掉访问后留下的下划线，text-decoration:none
+active 将得到焦点的链接；hover鼠标悬停
+td{border:1px solid black;
+	border-collapse:collapse;
+}
+#idname{}
+.classname{}
+单一使用的样式或需要程序控制的样式用ID.
+
+<p>回车换行<br>换行.
+<b>黑体<i>斜体<u>下划线
+0.1.<head>后跟随 meta title link script style base 
+0.3.<base href="http://hostname/root/" />用于指定页面中所有链接的基准 URL
+2.<pre>标记 保持文本段落格式。
+2.1.<address>标记地址
+3.bdo 字符反向
+3.1.em强调=i
+3.2.b加粗=strong
+3.3.small小号字
+3.4.sup上角标
+3.5.sub下角标
+4.blockquote “引用” 格式
+4.1.<hr align=left|right width=60% size noshade>
+5.<del>“删除”
+5.1.<s><strike>划线
+5.2.<u>下划线
+5.3.文本行片段选择：<span class>.在样式表中，有span.classname{}
+6.<ins>“插入/下划线”
+7.超链接：<a href="lastpage.htm" target="_blank|_parent|_self|_top(parent和top 用于frameset中 ) title=鼠标悬浮时提示的文字 text link alink vlink >。默认为本页刷新。
+8.章间命名锚：跳转出发点<a href="#desti">jump to ... </a> ；跳转目的地：<a name="desti"></a>
+9.框架：<frameset cols="25%" ,*"(*表示剩余空间的占用，cols与rows最好不好放在同一frameset中)>
+	<frame name src noresize="noresize" scrolling  frameborder=1,0(有无) border bordercolor framespacing marginwidth marginheight>。如果要链接跳转到另一框架则target=目标框架的name。
+9.1无框架用<noframes>标记的内容只显示在不支持框架的浏览器。
+9.2.网页内联框架<iframe src>
+10.表格：<table frame(边框属性)=border,void, box,above,below,hsides,vsides,lhs,rhs  width=60%  bgcolor  border  bordercolor bordercolorlight bordercolordark cellspacing  cellpadding  align（横向） valign(纵向对齐方式) rules(内部边框属性)="none"，rows,cols,all>
+	<caption align valign=top,bottom>表格头</caption><tr><th colspan="2">跨两列</th><tr><td width="30%"></table>用&nbsp空内容格隐藏边框。
+11.表格“跨两行” 示例<tr>	<th>First Name:</th>	<td>Bill Gates</td></tr>
+	<tr>	<th rowspan="2">Telephone:</th>	<td>555 77 854</td></tr>
+	<tr>	<td width="33%">555 77 855</td></tr>
+12.列表。<ul type=disc,circle,square><li>;
+		<ol type=A,a,1,i value=><li>;列表可嵌套
+		<dl><dt><dd></dl>
+13.表单。<form name=,method=,action enctype="text/plain">用户名：
+	<input type=button,text(属性id name value size(框长度) maxlength(字符长度)) readonly="true",password,submit,checkbox reset image file hidden(隐藏域)  image(功能同submit)>
+13.1单选框。<radio name=多选框应同名,value=; check>
+13.2文本框：maxlength,name,size（默认20）,value
+14.文本区：textarea rows=,cols= wrap(内容大于文本域时的显示)=off，virtual(自动换行,不提交换行符),physical(自动换行，不提交换行符)
+14.1.下拉列表<select id name value size  multiple><option value selected></option></selct>
+15.标题边框：<fieldset><legend>标题</legend><form>...
+16.图像:img src align=bottom,middle,top,left,right(文本与图像对齐),absmiddle,absbottom hspace vspace border height width alt。
+16.4.图像提交按钮：：type="image" name align src>
+16.5图像激活区域：<img src=  usemap="#mapname">	<map id="planetmap" name="mapname"><area shape=rect,circle,poly  coords="0,0,82,126" alt="Sun" href="sun.htm">
+17.音乐<embed src autostart loop(tfn) startime="分：秒" volume=0-100 width height hidden controls=console\smallconsole>
+		<bgsound src loop>
+17.1.视频<img src=图片 dynsrc start=fileopen| mouseover  controls(控制条)  loop=infinite|*  loopdelay>
+18.
+19.滚动字幕：<marquee aligh=left|center|right|top|bottom bgcolor direction=left|right|up|down behavior=scroll|slide|alternative height hspace scrollamount Scrolldelay  width 	VSpace　loop=-1一直滚>内容之间用<br>换行<image src=><marquee>
+19.4.<meta http-equiv="Content-Language" content="gb2312" />
+19.5.<meta http-equiv="content-type" content="TEXT/HTML;charset=GB2312">
+19.6.<meta name="description" content="你的简述">
+19.7.<meta http-equiv="refresh" content="3">
+20.关键字<meta name="keywords" content="你网页的关键词">
+20.1.robot/spider是否登录：<meta name="robots" content="all|index|follow|noindex|nofollow|none">
+	all 页面和其上的链接可以被查找；	
+	index 这是默认值，让robot/spider登录；
+	noindex-不让robot/spider登录　　
+	follow 页面上的链接可以被查找；　
+	nofollow-不让robot/spider查找此页面的内容；　　
+	none 和"noindex, no follow" 起相同作用；
+21.禁止缓存　<meta http-equiv="expires" content="0">
+　　		<meta http-equiv="Pragma" content="no-cache">	
+21.1.网页过期<meta http-equiv="expires" content="Sun, 24 march2002 11:50:00 GMT">
+22.定时跳转　<meta http-equiv="refresh" content="延迟的秒数"; url>
+23.设置渐变效果　<meta http-equiv = "Page-Enter" content="revealtrans(duration=2,transition=1-23的数字)">
+24.get被设计去请求数据；post被设计用于提交数据。可见数据大小两者会有差别。
+background可缩写顺便如下background : background-color || background-image || background-repeat || background-attachment || background-position 默认值为：transparent none repeat scroll 0% 0%。
+格式模板
+css:
+<head><style type="text/css">body{...}</style></head>
+<body style="background-color:#225587;">
+js:
+<head><script language="javascript" >alert();</script></head>
+<head><script lanz="javascript" src=""></script></head>
+
+控制表单可不可见或者可不可编辑,用disabled。加上该属性唯一状态是不可用状态。
